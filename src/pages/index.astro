@@ -1,9 +1,15 @@
 ---
 import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
+import Card from '../components/Card.astro'
+import '@/styles/globals.css'
+import { Button } from "@/components/ui/button"
 ---
 
 <Layout>
-	<h1 class="from-neutral-700 bg-red-600">ola mundo</h1>
+	<div class="w-full h-full bg-slate-900 py-32 box-border">
+		<Card class=""/>
+		<Button>Hello World</Button>
+	</div>
+	
 </Layout>
