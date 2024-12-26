@@ -1,0 +1,49 @@
+---
+import '@/styles/globals.css'
+import { Button } from '../ui/button'
+import Figure from '@/components/Figure.astro'
+---
+
+<section
+  class="w-full h-auto text-white text-center py-12 flex flex-col items-center gap-12"
+>
+  <article class="flex flex-col gap-12">
+    <h1 class="text-4xl font-bold">
+      <em class="text-[#E71D36]"> Benefícios </em>
+      instantâneos
+    </h1>
+    <div class="flex gap-10 flex-wrap w-[780px] justify-center">
+      <Figure
+        url="/Icon1.png"
+        alt="Figure 1"
+        description="Simplicidade na Gestão das Redes Sociais"
+      />
+      <Figure
+        url="/Icon2.png"
+        alt="Figure 2"
+        description="Acesso a Ferramentas Práticas e Eficientes"
+      />
+      <Figure
+        url="/Icon3.png"
+        alt="Figure 3"
+        description="Facilidade na Implementação de Estratégias de Social Media"
+      />
+      <Figure
+        url="/Icon4.png"
+        alt="Figure 4"
+        description="Domínio das Estratégias de Marketing Digital"
+      />
+      <Figure
+        url="/Icon5.png"
+        alt="Figure 5"
+        description="Efetividade na Execução de Ferramentas de Marketing Digital"
+      />
+    </div>
+  </article>
+
+  <Button
+    className="bg-[#E71D36] font-bold rounded-full  w-[450px]  h-[60px]  mb-3 text-lg"
+  >
+    Quero aproveitar essa opurtunidade
+  </Button>
+</section>
