@@ -1,0 +1,10 @@
+---
+import '@/styles/globals.css'
+import { Button } from '@/components/ui/button'
+const {width, height, description, bg, color}= Astro.props;
+---
+
+<Button className=`bg-[${bg}] font-bold rounded-full  w-[${width}px]  h-[${height}px] text-lg text-[${color}]`> 
+    {description}
+</Button>
+
