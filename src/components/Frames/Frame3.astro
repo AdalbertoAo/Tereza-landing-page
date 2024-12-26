@@ -1,0 +1,25 @@
+---
+import '@/styles/globals.css'
+import CardImage from '@/components/CardImage.astro'
+import { Button } from '@/components/ui/button'
+---
+
+<section
+  class="flex flex-col gap-12 items-center w-[780px] h-auto rounded-3xl bg-[#191919] box-border py-10"
+>
+  <p class="leading-9 text-center text-white text-2xl">
+    Finalmente você pode alcançar resultados eficazes mesmo com pouco
+    conhecimento em Marketing Digital por meio de uma abordagem simplificada
+    para manter a presença digital de forma consistente.
+  </p>
+  <article class="flex flex-wrap justify-between gap-10 w-[558px]">
+    <CardImage url="/prova-1.png" alt="prova social 1" />
+    <CardImage url="/prova-2.png" alt="prova social 2" />
+    <CardImage url="/prova-3.png" alt="prova social 1" />
+    <CardImage url="/prova-4.png" alt="prova social 1" />
+  </article>
+  <Button
+    className="bg-[#E71D36] font-bold rounded-full w-[450px] h-[60px] text-lg"
+  >Quero aproveitar essa opurtunidade
+  </Button>
+</section>
