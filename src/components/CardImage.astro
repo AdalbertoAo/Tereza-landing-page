@@ -1,17 +1,10 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from '../layouts/Layout.astro'
 import '@/styles/globals.css'
-import { Image } from "astro:assets";
-const { url, alt} = Astro.props;
+import { Image } from 'astro:assets'
+const { url, alt } = Astro.props
 ---
 
 <>
-<Image
-src= {url}
-alt={alt}
-width="215"
-height="465"
-class="mb-7 rounded-xl"
-/>
+  <Image src={url} alt={alt} width="215" height="465" class="rounded-xl" />
 </>
-   
