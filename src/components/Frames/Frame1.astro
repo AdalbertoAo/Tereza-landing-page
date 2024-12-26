@@ -1,0 +1,38 @@
+---
+import { Button } from '@/components/ui/button'
+import { Image } from 'astro:assets'
+import '@/styles/globals.css'
+import MyButton from '../MyButton.astro'
+---
+
+<section class="flex mt-20 gap-10 justify-between">
+  <article
+    class="article-left text-white flex flex-col gap-[10px] justify-between "
+  >
+    <img src="/LOGO.png" alt="Digital facil" width="168" height="73" />
+    <h1 class="w-[538px] text-3xl font-bold leading-[50px]">
+      FERRAMENTAS SIMPLES E PRATICAS QUE IRAO FACILITAR A SUA FORMA DE GERIR AS
+      REDES SOCIAIS
+    </h1>
+    <MyButton width="450" height="60" description="Quero aproveitar essa opurtunidade" bg="#E71D36" color="white"/>
+      <img
+        src="/card-de-pagamentos.svg"
+        alt="Meios de pagamentos"
+        width="493"
+        height="46"
+        class=""
+      />
+
+      <img
+        src="/3_objects.svg"
+        alt="vagas limitadas"
+        width="538"
+        height="73"
+      />
+  
+  </article>
+
+  <article class="article-rigt">
+    <div class="quadrado w-[576px] h-[560px] bg-[#E71D36]"></div>
+  </article>
+</section>
