@@ -1,0 +1,70 @@
+---
+import '@/styles/globals.css'
+import { Icon } from 'astro-icon/components'
+import ImageBox from '@/components/ImageBox.astro'
+---
+
+<section
+  class="flex justify-center w-full h-auto text-white py-12 bg-[#191919]"
+>
+  <article class="flex flex-col w-[780px] h-auto gap-7 justify-between">
+    <h1 class="text-4xl font-bold text-center">
+      Do que se trata +
+      <em class="">
+        Benefícios
+        <em></em>
+      </em>
+
+      <p class="text-xl leading-10">
+        Um sistema de gestão simplificada e descomplicada de mídias sociais,
+        para quem quer usufruir das melhores estratégias de MKT Digital no dia a
+        dia
+      </p>
+
+      <ul class="flex flex-col text-xl gap-5 ml-9 mt-7">
+        <li class="flex items-center gap-5">
+          <Icon name="ic--outline-done-all" class="w-[47px] h-[47px]" />
+          <span class="text-white">Acesso a Ferramentas Práticas</span>
+        </li>
+        <li class="flex items-center gap-5">
+          <Icon name="ic--outline-done-all" class="w-[47px] h-[47px]" />
+          <span>Facilidade na Execução de Ferramentas de Marketing Digital</span
+          >
+        </li>
+        <li class="flex items-center gap-5">
+          <Icon name="ic--outline-done-all" class="w-[47px] h-[47px]" />
+          <sapn>Processos e Ferramentas Pro</sapn>ntas para Uso
+        </li>
+        <li class="flex items-center gap-5">
+          <Icon name="ic--outline-done-all" class="w-[47px] h-[47px]" />
+          <sapn>Eficácia Mesmo com Pouco Co</sapn>nhecimento
+        </li>
+        <li class="flex items-center gap-5">
+          <Icon name="ic--outline-done-all" class="w-[47px] h-[47px]" />
+          <sapn>Aumento da Produtividade</sapn>
+          <li class="flex items-center gap-5">
+            <Icon name="ic--outline-done-all" class="w-[47px] h-[47px]" />
+            <sapn>Pode usar de qualquer lugar</sapn>
+          </li>
+        </li>
+        <div class="flex flex-col gap-5 mt-7 items-center">
+          <ImageBox
+            url="/call.svg"
+            title="SUPORTE 24H NO WHATSAPP"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+          />
+          <ImageBox
+            url="/call.svg"
+            title="SUPORTE 24H NO WHATSAPP"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+          />
+          <ImageBox
+            url="/call.svg"
+            title="SUPORTE 24H NO WHATSAPP"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+          />
+        </div>
+      </ul>
+    </h1>
+  </article>
+</section>
