@@ -1,0 +1,13 @@
+---
+import '@/styles/globals.css'
+import { Image } from 'astro:assets'
+const { url, title, description } = Astro.props
+---
+
+<div class="flex gap-5 items-center w-[660px] h-auto text-white">
+  <Image src={url} alt=" " width="107" height="107" class="" />
+  <div>
+    <h1 class="text-3xl font-bold">{title}</h1>
+    <p class="text-sm">{description}</p>
+  </div>
+</div>
