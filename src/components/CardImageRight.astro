@@ -1,0 +1,25 @@
+---
+import '@/styles/globals.css'
+const { title, description, position } = Astro.props
+
+// Define as classes para alternar entre layouts
+const isLeft = position === 'left'
+const leftOrder = isLeft ? 'flex-row' : 'flex-row-reverse'
+---
+
+<div class={`text-white text-base flex ${leftOrder} gap-5`}>
+  <!-- Texto e Quadrado Vermelho Pequeno -->
+  <div class="flex flex-col gap-3">
+    <div class="flex gap-2">
+      <!-- Quadrado Vermelho Pequeno -->
+      <div class="bg-[#E71D36] w-3 h-auto"></div>
+      <!-- Título -->
+      <h2 class="text-3xl max-w-[330px] leading-10 font-bold">{title}</h2>
+    </div>
+    <!-- Descrição -->
+    <p class="w-[370px]">{description}</p>
+  </div>
+
+  <!-- Bloco Vermelho Grande -->
+  <div class="w-[390px] h-[233px] bg-[#E71D36]"></div>
+</div>
