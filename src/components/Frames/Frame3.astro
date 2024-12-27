@@ -1,25 +1,35 @@
 ---
 import '@/styles/globals.css'
 import CardImage from '@/components/CardImage.astro'
-import { Button } from '@/components/ui/button'
+import MyButton from '../MyButton.astro'
 ---
 
-<section
-  class="flex flex-col gap-12 items-center w-[780px] h-auto rounded-3xl bg-[#191919] box-border py-10"
->
-  <p class="leading-9 text-center text-white text-2xl">
+<section class="flex flex-col gap-12 items-center w-full max-w-[780px] rounded-3xl bg-[#191919] box-border py-10 px-6 text-white">
+    <!-- Título da Seção -->
+    <h2 class="text-center text-white text-3xl font-semibold">
+      Alcance Resultados Eficazes com Simplicidade
+    </h2>
+
+      <!-- Descrição -->
+  <p class="leading-9 text-center text-white text-xl">
     Finalmente você pode alcançar resultados eficazes mesmo com pouco
     conhecimento em Marketing Digital por meio de uma abordagem simplificada
     para manter a presença digital de forma consistente.
   </p>
-  <article class="flex flex-wrap justify-between gap-10 w-[558px]">
+
+  <article class="flex flex-wrap justify-between gap-6 w-full max-w-[558px] text-white"
+  aria-label="Provas sociais que demonstram resultados alcançados por nossos clientes">
     <CardImage url="/prova-1.png" alt="prova social 1" />
     <CardImage url="/prova-2.png" alt="prova social 2" />
     <CardImage url="/prova-3.png" alt="prova social 1" />
     <CardImage url="/prova-4.png" alt="prova social 1" />
   </article>
-  <Button
-    className="bg-[#E71D36] font-bold rounded-full w-[450px] h-[60px] text-lg"
-  >Quero aproveitar essa opurtunidade
-  </Button>
+  <MyButton
+  width="450" 
+  height="60" 
+  description="Quero aproveitar essa oportunidade" 
+  isBg="0" 
+  color="white" 
+  aria-label="Clique para aproveitar esta oportunidade"
+/>
 </section>

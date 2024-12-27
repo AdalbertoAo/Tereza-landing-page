@@ -1,11 +1,14 @@
 ---
 import '@/styles/globals.css'
-import { Button } from '@/components/ui/button'
+import MyButton from '../MyButton.astro'
 ---
-<section class="flex flex-col gap-8 items-center w-full h-[480px] bg-[#191919] py-[64px] ">
+<section class="flex flex-col gap-8 items-center w-full h-[480px] bg-[#191919] py-[64px] text-white">
     <div class="bg-[#E71D36] w-[780px] h-[260px] rounded-[40px]"></div>
-    <Button
-        className="bg-[#E71D36] font-bold rounded-full  w-[450px]  h-[60px]  mb-3 text-lg"
-    > Quero aproveitar essa opurtunidade
-    </Button>
+    <MyButton
+        width="450"
+        height="60"
+        description="Quero aproveitar essa oportunidade"
+        isBg="0" 
+        color="#fff"
+    />
 </section>

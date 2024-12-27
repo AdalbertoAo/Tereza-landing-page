@@ -1,17 +1,16 @@
 ---
 import '@/styles/globals.css'
 import CardImageRight from '@/components/CardImageRight.astro'
-import { Button } from '@/components/ui/button'
+import MyButton from '@/components/MyButton.astro';
 ---
 
 <section class="text-white flex flex-col gap-12">
     <article>
-        <h2 class="text-4xl font-bold text-center mb-12">
-            PARA QUEM E O DIGITAL FACIL?
+        <h2 class="text-4xl font-bold text-center mb-12 uppercase">
+            Para quem e o Digital Facil?
         </h2>
         <div class="flex flex-col gap-12 items-center">
         <CardImageRight
-            className=""
             title="PROFICIONAIS CRIATIVOS"
             description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, modi distinctio quibusdam ad reiciendis reprehenderit quis, provident iusto, id libero dicta facere neque. Hic "
         />
@@ -21,7 +20,6 @@ import { Button } from '@/components/ui/button'
             description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, modi distinctio quibusdam ad reiciendis reprehenderit quis, provident iusto, id libero dicta facere neque. Hic "
         />
         <CardImageRight
-            className=""
             title="PROFICIONAIS DE MARKETING"
             description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, modi distinctio quibusdam ad reiciendis reprehenderit quis, provident iusto, id libero dicta facere neque. Hic "
         />
@@ -31,15 +29,16 @@ import { Button } from '@/components/ui/button'
             description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, modi distinctio quibusdam ad reiciendis reprehenderit quis, provident iusto, id libero dicta facere neque. Hic "
         />
         <CardImageRight
-            className=""
             title="NOOBS NO MARKETING DIGUITAL"
             description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, modi distinctio quibusdam ad reiciendis reprehenderit quis, provident iusto, id libero dicta facere neque. Hic "
         />
-        <Button
-            className="bg-[#E71D36] font-bold rounded-full  w-[450px]  h-[60px]  mb-3 text-lg"
-        >
-            Quero aproveitar essa opurtunidade
-        </Button>
+        <MyButton
+    width="450"
+    height="60"
+    description="Quero aproveitar essa oportunidade"
+    isBg="0" 
+    color="white"
+  />
         </div>
     </article>
 </section>

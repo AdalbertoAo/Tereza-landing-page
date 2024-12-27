@@ -4,24 +4,25 @@ import { Icon } from 'astro-icon/components'
 import ImageBox from '@/components/ImageBox.astro'
 ---
 
+
 <section
   class="flex justify-center w-full h-auto text-white py-12 bg-[#191919]"
+  aria-labelledby="benefits-section-title"
 >
   <article class="flex flex-col w-[780px] h-auto gap-7 justify-between">
-    <h1 class="text-4xl font-bold text-center">
+    <h1 class="text-4xl font-bold text-center uppercase">
       Do que se trata +
-      <em class="">
+      <em class="text-[#E71D36]">
         Benefícios
-        <em></em>
       </em>
-
+    </h1>
       <p class="text-xl leading-10">
         Um sistema de gestão simplificada e descomplicada de mídias sociais,
         para quem quer usufruir das melhores estratégias de MKT Digital no dia a
-        dia
+        dia.
       </p>
 
-      <ul class="flex flex-col text-xl gap-5 ml-9 mt-7">
+      <ul class="flex flex-col text-xl gap-5 ml-9 mt-7 list-none">
         <li class="flex items-center gap-5">
           <Icon name="ic--outline-done-all" class="w-[47px] h-[47px]" />
           <span class="text-white">Acesso a Ferramentas Práticas</span>
@@ -47,6 +48,7 @@ import ImageBox from '@/components/ImageBox.astro'
             <sapn>Pode usar de qualquer lugar</sapn>
           </li>
         </li>
+      </ul>
         <div class="flex flex-col gap-5 mt-7 items-center">
           <ImageBox
             url="/call.svg"
@@ -64,7 +66,6 @@ import ImageBox from '@/components/ImageBox.astro'
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
           />
         </div>
-      </ul>
-    </h1>
+     
   </article>
 </section>

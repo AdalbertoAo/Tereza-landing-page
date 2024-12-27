@@ -1,5 +1,5 @@
 ---
-import { Button } from '../ui/button'
+import MyButton from '../MyButton.astro'
 import '@/styles/globals.css'
 ---
 
@@ -9,13 +9,14 @@ import '@/styles/globals.css'
         bg-[#191919] opacity-90
         py-[117px] px-[173px]
         text-white text-lg"
+  aria-labelledby="dificuldade-mkt-digital"
 >
-  <article class="card-left flex flex-col gap-3">
-    <h1 class="text-4xl font-bold leading-[53px]">
+  <article class="flex flex-col gap-6">
+    <h1 class="text-4xl font-bold leading-[53px] uppercase">
       Dificuldade na Execução Prática das Ferramentas de MKT Digital?
     </h1>
     <p>
-      O Digital Fácil irá facilitar a sua forma de gerir as plataformas de mídia
+      O <strong>Digital Fácil</strong> irá facilitar a sua forma de gerir as plataformas de mídia
       sociais por meio da aplicação de estratégias de marketing digital sem
       complicações.
     </p>
@@ -26,13 +27,21 @@ import '@/styles/globals.css'
       a dia de trabalho.
     </p>
 
-    <Button
-      className="bg-[#E71D36] font-bold rounded-full  w-[450px]  h-[60px] text-lg"
-    >
-      Quero aproveitar essa opurtunidade
-    </Button>
+     <!-- Botão Personalizado -->
+     <MyButton
+     width="450"
+     height="60"
+     description="Quero aproveitar essa oportunidade"
+     isBg="0" 
+    color="white"
+   />
   </article>
-  <article class="card-rigt">
-    <div class="quadrado w-[460px] h-[460px] bg-[#E71D36]"></div>
+
+  <article>
+    <div
+      class="quadrado w-[460px] h-[460px] bg-[#E71D36] rounded-lg shadow-lg"
+      aria-hidden="true"
+    ></div>
+  
   </article>
 </section>

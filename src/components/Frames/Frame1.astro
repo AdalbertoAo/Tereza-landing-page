@@ -1,36 +1,47 @@
 ---
-import '@/styles/globals.css'
-import MyButton from '../MyButton.astro'
+import '@/styles/globals.css';
+import MyButton from '../MyButton.astro';
 ---
 
 <section class="flex mt-20 gap-10 justify-between">
-  <article
-    class="article-left text-white flex flex-col gap-[10px] justify-between "
-  >
+  <article class=" text-white flex flex-col gap-[10px] justify-between ">
     <img src="/LOGO.png" alt="Digital facil" width="168" height="73" />
-    <h1 class="w-[538px] text-3xl font-bold leading-[50px]">
-      FERRAMENTAS SIMPLES E PRATICAS QUE IRAO FACILITAR A SUA FORMA DE GERIR AS
-      REDES SOCIAIS
+    <h1 class="max-w-[538px] text-3xl font-bold leading-[50px] uppercase">
+      Ferramentas simples e práticas que irão facilitar a sua forma de gerir as
+      redes sociais
     </h1>
-    <MyButton width="450" height="60" description="Quero aproveitar essa opurtunidade" bg="#E71D36" color="white"/>
-      <img
-        src="/card-de-pagamentos.svg"
-        alt="Meios de pagamentos"
-        width="493"
-        height="46"
-        class=""
-      />
+    <MyButton 
+    width="450" 
+    height="60" 
+    description="Quero aproveitar esta opurtunidade" 
+    isBg="0" 
+    color="white"
+  /> 
+  <figure>
+    <img 
+      src="/card-de-pagamentos.svg" 
+      alt="Meios de pagamentos disponíveis" 
+      width="493" 
+      height="46" 
+      loading="lazy" 
+    />
+  </figure>
 
-      <img
-        src="/3_objects.svg"
-        alt="vagas limitadas"
-        width="538"
-        height="73"
-      />
-  
-  </article>
-
-  <article class="article-rigt">
-    <div class="quadrado w-[576px] h-[560px] bg-[#E71D36]"></div>
-  </article>
+  <figure>
+    <img 
+      src="/3_objects.svg" 
+      alt="Vagas limitadas para inscrição" 
+      width="538" 
+      height="73" 
+      loading="lazy" 
+    />
+  </figure>
+</article>
+  <aside>
+    <div 
+      class="w-[576px] h-[560px] bg-[#E71D36]" 
+      aria-hidden="true" 
+      role="presentation">
+    </div>
+  </aside>
 </section>

@@ -1,10 +1,10 @@
 ---
 import '@/styles/globals.css'
 import { Button } from '@/components/ui/button'
-const {width, height, description, bg, color}= Astro.props;
+const {width, height, description, isBg='1', color, }= Astro.props;
 ---
 
-<Button className=`bg-[${bg}] font-bold rounded-full  w-[${width}px]  h-[${height}px] text-lg text-[${color}]`> 
+<Button className={` ${isBg=='1' ? "bg-white": "bg-[#E71D36]"} font-bold rounded-full  w-[${width}px]  h-[${height}px] text-lg text-[${color}] `}> 
     {description}
 </Button>
 

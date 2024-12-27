@@ -1,14 +1,16 @@
 ---
 import '@/styles/globals.css'
 import { Button } from '../ui/button'
+import MyButton from '@/components/MyButton.astro';
 import Figure from '@/components/Figure.astro'
 ---
 
 <section
   class="w-full h-auto text-white text-center py-12 flex flex-col items-center gap-12"
+  aria-labelledby="beneficios-instantaneos"
 >
   <article class="flex flex-col gap-12">
-    <h1 class="text-4xl font-bold">
+    <h1 class="text-4xl font-bold uppercase">
       <em class="text-[#E71D36]"> Benefícios </em>
       instantâneos
     </h1>
@@ -41,9 +43,12 @@ import Figure from '@/components/Figure.astro'
     </div>
   </article>
 
-  <Button
-    className="bg-[#E71D36] font-bold rounded-full  w-[450px]  h-[60px]  mb-3 text-lg"
-  >
-    Quero aproveitar essa opurtunidade
-  </Button>
+  <!-- Botão Personalizado -->
+  <MyButton
+    width="450"
+    height="60"
+    description="Quero aproveitar essa oportunidade"
+    isBg="0" 
+    color="white"
+  />
 </section>
