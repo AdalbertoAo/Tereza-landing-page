@@ -6,7 +6,7 @@
 
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Funcionalidades](#funcionalidades)
-- [Instalação](#instalação)
+- [Rodar Localmente](#rodar-localmente)
 - [Uso](#uso)
 - [Contribuição](#contribuição)
 - [Licença](#licença)
@@ -36,7 +36,7 @@
 
 ---
 
-## Como Rodar Localmente
+## Rodar Localmente
 
 ### 1. Clone o Repositório
 
