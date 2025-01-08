@@ -1,8 +1,15 @@
-# ACTIVADORA DE CONHECIMENTO LANDING PAGE
-
+# Tereza - Landing Page
 
 ![alt](/public/preview.png)
-# Tereza - Landing Page
+
+## Índice
+
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Funcionalidades](#funcionalidades)
+- [Instalação](#instalação)
+- [Uso](#uso)
+- [Contribuição](#contribuição)
+- [Licença](#licença)
 
 **Tereza** é uma landing page moderna e otimizada, projetada para a apresentação de um produto digital voltado para o mercado de marketing. A página foi desenvolvida com foco em performance, responsividade e uma experiência de usuário fluida.
 
@@ -41,5 +48,6 @@ cd Tereza-landing-page
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `cd Tereza-landing-page`  | `aceder ao directorio do projecto`               |
+| `npm install`             | Instalar as Dependencias                         |
+| `npm run dev`             | rodar o projeto localmente                       |
