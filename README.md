@@ -7,9 +7,6 @@
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Funcionalidades](#funcionalidades)
 - [Rodar Localmente](#rodar-localmente)
-- [Uso](#uso)
-- [Contribuição](#contribuição)
-- [Licença](#licença)
 
 **Tereza** é uma landing page moderna e otimizada, projetada para a apresentação de um produto digital voltado para o mercado de marketing. A página foi desenvolvida com foco em performance, responsividade e uma experiência de usuário fluida.
 
